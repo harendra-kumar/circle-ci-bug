@@ -31,10 +31,8 @@ jobs:
       steps:
         - checkout
         - *preinstall
-        - *restore
         - run: |
               echo "****CABAL_REINIT_CONFIG=$CABAL_REINIT_CONFIG"
-        - *save
 
 workflows:
   version: 2.1
