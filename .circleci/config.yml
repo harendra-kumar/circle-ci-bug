@@ -12,6 +12,8 @@ env: &env
       # ------------------------------------------------------------------------
       # GHC_OPTIONS: "-Werror"
       CABAL_REINIT_CONFIG: "y"
+    docker:
+      - image: debian:stretch
 
 #-----------------------------------------------------------------------------
 # Common utility stuff, not to be modified usually
